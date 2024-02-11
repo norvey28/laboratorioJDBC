@@ -1,31 +1,31 @@
 package test;
 
-import datos.PersonaDAO;
-import domain.Persona;
+import datos.UsuarioDAO;
+import domain.Usuario;
 import java.util.List;
 
 public class TestManejoPersonas {
 
     public static void main(String[] args) {
-        PersonaDAO personaDao = new PersonaDAO();
+        UsuarioDAO usuarioDao = new UsuarioDAO();
 
         //Insertando un nuevo objeto de tipo Persona
-//        Persona personaNueva = new Persona("Carlos", "Esparza", "cesparza@mail.com", "554456587");
-//        personaDao.insertar(personaNueva);
+//        Usuario usuarioNuevo = new Usuario("Mario", "111");
+//        usuarioDao.insertar(usuarioNuevo);
 
         //Modificar un objeto de persona existente
-//        Persona personaModificar = new Persona(4, "Juan Carlos", "Esparza", "jcesparza@mail.com", "554456587");
-//        personaDao.actualizar(personaModificar);
+//        Usuario usuarioModificar = new Usuario(1, "Juan Carlos", "Esparza");
+//        usuarioDao.actualizar(usuarioModificar);
 
         //Eliminar un registro
-        Persona personaEliminar = new Persona(4);
-        personaDao.eliminar(personaEliminar);
-        
-        //Listado Persona
-        List<Persona> personas = personaDao.seleccionar();
+//        Usuario usuarioEliminar = new Usuario(1);
+//        usuarioDao.eliminar(usuarioEliminar);
+//        
+//        //Listado Usuario
+        List<Usuario> usuarios = usuarioDao.seleccionar();
 
-        personas.forEach(persona -> {
-            System.out.println("persona = " + persona);
+        usuarios.forEach(usuario -> {
+            System.out.println("usuario = " + usuario);
         });
     }
 }
